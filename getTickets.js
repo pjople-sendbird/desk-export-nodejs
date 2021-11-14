@@ -33,6 +33,8 @@ function getTickets(dateRange) {
             const { results, next } = await response.json()
             console.log(`\nℹ️ ${results.length} tickets were found`);
 
+            console.log(tickets);
+
             // More data fields in ticket resonse object in linke below:
             // Docs: https://sendbird.com/docs/desk/v1/platform-api/guides/ticket#2-list-tickets-3-response
             const data = results.map(ticket => ({
@@ -53,6 +55,8 @@ function getTickets(dateRange) {
                 customerId: ticket.customer.id,
                 customerSendbirdId: ticket.customer.sendbirdId,
                 customerName: ticket.customer.displayName,
+                customFields: ticket.customFields,
+                customerSatisfactionScore: ticket.customerSatisfactionScore
             }))
 
             tickets.push(...data)
