@@ -4,8 +4,8 @@
 
 This script exports Desk information and store the result inside a JSON file: `export-requests.json` 
 
-````Author````: Charis Theodoulou
-````Updated by````: Walter Rodriguez
+- ````Author````: Charis Theodoulou
+- ````Updated by````: Walter Rodriguez
 
 ## Install
 
