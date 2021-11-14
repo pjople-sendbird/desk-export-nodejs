@@ -14,7 +14,13 @@ This script exports Desk information and store the result inside a JSON file: `e
     node registerRequests.js && node updateRequestsStatus.js
     ```
 
-```updateRequestsStatus.js``` fetches and updates the output JSON file (`export-requests.json`) with requests' statuses
+    ```updateRequestsStatus.js``` fetches and updates the output JSON file (`export-requests.json`) with requests' statuses
+
+    Open ```export-requests.json``` to see your ticket's information.
+
+3. If you want to see the messages from these exported tickets, go to your Dashboard and select ```Data Export```. 
+You will see a data export request with the information of the messages for these tickets. Download and use.
+
 
 ## Customise
 
